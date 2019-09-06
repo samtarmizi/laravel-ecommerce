@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', 'ProductsController@index');
-Route::get('cart', 'ProductsController@cart');
-Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
-Route::patch('update-cart', 'ProductsController@update');
-Route::delete('remove-from-cart', 'ProductsController@remove');
+Route::get('/', 'ProductController@index');
+Route::get('cart', 'ProductController@cart');
+Route::get('add-to-cart/{id}', 'ProductController@addToCart');
+Route::patch('update-cart', 'ProductController@update');
+Route::delete('remove-from-cart', 'ProductController@remove');
 
