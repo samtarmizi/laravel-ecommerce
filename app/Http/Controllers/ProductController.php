@@ -23,9 +23,12 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function cart()
     {
-        //
+        if (session('cart') != null) {
+            return view('cart');
+        }
+        return redirect('/');
     }
 
     /**
