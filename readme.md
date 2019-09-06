@@ -2,5 +2,9 @@
 
 ## Create Model, Migration & Controller
 
-- [php artisan make:model Product -a].
+- php artisan make:model Product -a
+
+## Create Seeder
+
+- php artisan make:seeder ProductSeeder
 
