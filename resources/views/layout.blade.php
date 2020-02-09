@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app.css') !!}">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -43,8 +43,9 @@
                                 <?php $total += $details['price'] * $details['quantity'] ?>
                             @endforeach
 
-                            <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
-                                <p>Total: <span class="text-info">$ {{ $total }}</span></p>
+                            <div class="col-lg-6 col-sm-6 col-6 total-section text-center">
+                                <br>
+                                <p>Total: <span class="text-info">RM {{ $total }}</span></p>
                             </div>
                         @endif
                     </div>
@@ -55,10 +56,11 @@
                                     <img src="{{ $details['photo'] }}" />
                                 </div> --}}
                                 <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
-                                    <p>{{ $details['name'] }}</p>
-                                    <span class="price text-info"> ${{ $details['price'] }}</span> <span class="count"> Quantity:{{ $details['quantity'] }}</span>
+                                    <p><b>{{ $details['name'] }}</b></p>
+                                    <span class="price text-info"> RM{{ $details['price'] }}</span> <span class="count"> Quantity:{{ $details['quantity'] }}</span>
                                 </div>
                             </div>
+                            <br>
                         @endforeach
                     @endif
                     <div class="row">

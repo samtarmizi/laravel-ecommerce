@@ -2,10 +2,9 @@
 
 @section('title', 'Products')
 @section('content')
-    <div class="container products">
         <div class="row">
             @foreach($products as $product)
-                <div class="col-xs-18 col-sm-6 col-md-3">
+                <div class="col-md-6 col-sm-6 col-xs-6">
                     <div class="thumbnail">
                         <img src="{{ $product->photo }}" width="150" height="150">
                         <div class="caption">
@@ -18,5 +17,4 @@
                 </div>
             @endforeach
         </div>
-    </div>
 @endsection
