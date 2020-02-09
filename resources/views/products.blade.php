@@ -7,7 +7,7 @@
             @foreach($products as $product)
                 <div class="col-xs-18 col-sm-6 col-md-3">
                     <div class="thumbnail">
-                        <img src="{{ $product->photo }}" width="500" height="300">
+                        <img src="{{ $product->photo }}" width="150" height="150">
                         <div class="caption">
                             <h4>{{ $product->name }}</h4>
                             <p>{{ $product->description }}</p>
